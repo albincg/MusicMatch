@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --spotify-green: #1DB954;
+}
+
+body {
+  background: radial-gradient(circle at top center, #18181b 0%, #09090b 100%);
+}
+
+.spotify-button {
+  @apply bg-[#1DB954] hover:bg-[#1ed760] text-black font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2;
+}
+
+.glass-card {
+  @apply bg-zinc-900/50 border border-zinc-800 backdrop-blur-md rounded-2xl p-6;
+}
